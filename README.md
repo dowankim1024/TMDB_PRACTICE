@@ -7,6 +7,7 @@ fetchMovies에서는 query,즉 검색어가 없으면 자체의 인기영화, �
 
 fetchMovieDetail에서는 클릭한 영화의 상세정보를 리턴한다
 
+
 ### <loader.js>
 
 loadInitialMovies는 인기영화데이터를 받아오고, 렌더무비즈로 렌더링한다
@@ -14,6 +15,7 @@ loadInitialMovies는 인기영화데이터를 받아오고, 렌더무비즈로 �
 searchMovies는 검색어 기반으로 보여준다. 이때 검색창에 입력한 값의 공백을 제거한다.
 
 updateBookmarkCount는 로컬스토리지에서 북마크 길이를 가져와 북마크 버튼 오른쪽에 북마크 갯수를 보여준다
+
 
 ### <eventHandlers.js>
 
@@ -31,6 +33,7 @@ updateBookmarkCount는 로컬스토리지에서 북마크 길이를 가져와 �
 
 홈버튼은 다시 인기영화를 불러온다.
 
+
 ### <bookmark.js>
 
 기본적으로 로컬 스토리지를 관리한다
@@ -41,6 +44,7 @@ removeBookmark에서는 필터로 id제거하고, 새로 저장한다
 
 getBookmarks에서는 parse로 문자열을 다시 배열로, 아무것도 없으면 빈 배열을 반환한다
 
+
 ### <ui.js>
 
 renderMovies는 기본적으로 영화 데이터 배열을 받아서 container에 HTML로 렌더링한다.
@@ -48,6 +52,7 @@ renderMovies는 기본적으로 영화 데이터 배열을 받아서 container�
 각 영화에 대해 HTML을 생성하기 위해 map 을 사용했고, 나중에 join으로 합쳐준다.
 
 북마크 버튼은 앞서 bookmark.js에서 만든 함수인 isBookmarked를 import하여 북마크 여부로 보이는 UI가 다르게 한다.
+
 
 ### <modal.js>
 
