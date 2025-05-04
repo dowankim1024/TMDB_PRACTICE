@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TMDB 영화 리스트</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">DOWAN</h1>
+      <div class="search">
+        <input type="text" id="searchInput" />
+        <button id="searchButton">검색</button>
+        <button id="viewBookmarks">
+          북마크만 보기(<span id="bookmarkCount">0</span>)
+        </button>
+        <button id="homeButton">Home</button>
+      </div>
+    </header>
+
+    <div id="movieList"></div>
+
+    <div id="modal" class="hidden">
+      <div id="modalContent"></div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
